@@ -37,4 +37,4 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: DeployAKS-1.0-SNAPSHOT
-          path: ${project.basedir}/releases
+          path: ${project.basedir}/releases/
