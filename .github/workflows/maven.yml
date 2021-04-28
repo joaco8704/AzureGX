@@ -26,5 +26,5 @@ jobs:
     - name: Archive war
       uses: actions/upload-artifact@v2
       with:
-         name: /home/runner/.m2/repository/com/idquilmes/DeployAKS/1.0-SNAPSHOT/DeployAKS-1.0-SNAPSHOT.war
-         path: /home/runner/.m2/repository/com/idquilmes/DeployAKS/1.0-SNAPSHOT/DeployAKS-1.0-SNAPSHOT.war
+         name: DeployAKS-1.0-SNAPSHOT.war
+         path: DeployAKS-1.0-SNAPSHOT.war
