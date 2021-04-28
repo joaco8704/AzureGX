@@ -28,3 +28,11 @@ jobs:
       with:
         name: public
         path: public
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download files to publish
+        uses: actions/download-artifact@v2
+        with:
+          name: public
