@@ -23,8 +23,8 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
-    - name: Archive code coverage results
+    - name: Archive war
       uses: actions/upload-artifact@v2
       with:
-         name: code-coverage-report
-         path: output/test/code-coverage.html
+         name: /home/runner/.m2/repository/com/idquilmes/DeployAKS/1.0-SNAPSHOT/DeployAKS-1.0-SNAPSHOT.war
+         path: output/Deploy.war
