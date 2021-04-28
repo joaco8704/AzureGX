@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: DeployAKS-1.0-SNAPSHOT
-        path: DeployAKS.war
+        path: target/DeployAKS-1.0-SNAPSHOT.war
         
   deploy:
     runs-on: ubuntu-latest
@@ -36,4 +36,4 @@ jobs:
       - name: Download files to publish
         uses: actions/download-artifact@v2
         with:
-          name: DeployAKS.war
+          name: DeployAKS-1.0-SNAPSHOT.war
