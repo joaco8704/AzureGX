@@ -23,10 +23,8 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml install
-    - name: Package
-      
+    - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
-        name: Package  
-        path: staging
-        run: mkdir staging && cp target/*.war staging
+         name: code-coverage-report
+         path: output/test/code-coverage.html
