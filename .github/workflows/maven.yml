@@ -31,7 +31,7 @@ jobs:
       with:
         name: DeployAKS-1.0-SNAPSHOT
         path: target/DeployAKS-1.0-SNAPSHOT.war
-sonar:
+  sonar:
     name: Build
     runs-on: ubuntu-latest
     steps:
