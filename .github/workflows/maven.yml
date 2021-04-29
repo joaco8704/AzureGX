@@ -25,7 +25,9 @@ jobs:
     - name: Build with Maven
       run: mvn install -B --file pom.xml install
     - name: Compile with Maven
-      run: mvn compile
+      run: mvn compile -B --file pom.xml
+    - name: pack with Maven
+      run: mvn package -B --file pom.xml
     - name: Save public folder
       uses: actions/upload-artifact@v2
       with:
