@@ -62,7 +62,7 @@
 					<configuration>
 						<webResources>
 							<resource>
-							<directory>${project.basedir}/DeployAKS</directory>
+							<directory>${project.basedir}</directory>
 						    </resource>
 						</webResources>
 					</configuration>
