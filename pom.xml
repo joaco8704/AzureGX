@@ -15,7 +15,9 @@
 		<sonar.organization>joaco8704</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
-
+	<modules>
+		<module>DeployAKS</module>
+	</modules>
 	<dependencies>
 	</dependencies>
 
