@@ -21,6 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+        run: java -cp panelaks com\idquilmes\
     - name: Build with Maven
       run: mvn install -B --file pom.xml install
     - name: Compile with Maven
