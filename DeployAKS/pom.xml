@@ -2,25 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	<parent>
+		<groupId>com.idquilmes</groupId>
+		<artifactId>inicio</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	
 	<groupId>com.idquilmes</groupId>
-	<artifactId>inicio</artifactId>
+	<artifactId>DeployAKS</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>war</packaging>
 	<name>DeployAKS</name>
-	
+
 	<properties>
-		<sonar.projectKey>joaco8704_AzureGX</sonar.projectKey>
-		<sonar.organization>joaco8704</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
-	<modules>
-		<module>DeployAKS</module>
-	</modules>
-	
+
 	<dependencies>
-		
 	</dependencies>
 
 	<build>
@@ -35,8 +33,8 @@
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
 				</plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
 				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.7.0</version>
 				</plugin>
 				<plugin>
@@ -58,7 +56,6 @@
 				<plugin>
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.6</version>
-<<<<<<< HEAD
 					<configuration>
 						<webResources>
 							<resource>
@@ -66,8 +63,6 @@
 						    </resource>
 						</webResources>
 					</configuration>
-=======
->>>>>>> 394ab08dec31413c638431434d58da6f0958e0f5
 				</plugin>
 			</plugins>
 		</pluginManagement>
